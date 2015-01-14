@@ -4,36 +4,20 @@
     <meta charset="utf-8">
     <title>Adam's Chocolate Pizza</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/unsemantic-grid-responsive.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base/normalize.css">
+    <link rel="stylesheet" href="css/layout/unsemantic-grid-responsive.css">
+    <link rel="stylesheet" href="css/layout/style.css">
     <link href='http://fonts.googleapis.com/css?family=Abel|Yellowtail|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-    <noscript>
-      <link rel="stylesheet" href="css/unsemantic-grid-mobile.css" />
-    </noscript>
-    <script>
-      var ADAPT_CONFIG = {
-        path: 'css/',
-        dynamic: true,
-        range: [
-          '0 to 767px = unsemantic-grid-mobile.css',
-          '767px = unsemantic-grid-desktop.css'
-        ]
-      };
-    </script>
-    <script src="scripts/html5.js"></script>
-    <script src="scripts/adapt.min.js"></script>
   </head>
-
   <body >
     <header>
-      <section class = "grid-70 mobile-grid-50">
-        <img class="toplogo" src ="images/toplogo.png"/>
+      <section class ="grid-70 mobile-grid-50">
+        <img class="header__toplogo" src ="images/toplogo.png"/>
         <h1>Delicious</h1>
-        <h2>THE BEST FOOD BLOG ON THE WEB</h2>
+        <h2 class="articleheader__subtitle">THE BEST FOOD BLOG ON THE WEB</h2>
       </section>
       <section class = "grid-30 mobile-grid 50">
-        <nav class = "socialicons">
+        <nav class = "header__socialicons">
           <img src="images/social/fb.png" alt="Facebook"/>
           <img src="images/social/twitter.png" alt="Twitter"/>
           <img src="images/social/gplus.png" alt="Google Plus"/>
@@ -51,8 +35,8 @@
       <article>
         <div class="grid-80 mobile-grid-50">
           <section class = "articleheader" >
-            <h1>Chocolate Pizza</h1>
-            <h2 class="articleinfo">POSTED ON 15 DEC 2013 / DESSERTS</h2>
+            <h1 class="articleheader__title">Chocolate Pizza</h1>
+            <h2 class="articleheader__info">POSTED ON 15 DEC 2013 / DESSERTS</h2>
           </div>
           <section class="grid-20"/>
             <img class="printericon" src="images/print.png" alt="Print this page"/>
@@ -69,7 +53,7 @@
      
         <section class="grid-100 after-mobile-100">
           <div class="recipe">
-            <form class="ingredients">
+            <form class="recipe__ingredients">
               <input type="checkbox" name="chk" value="" unchecked> 1 1/2 cups milk</br>
               <input type="checkbox" name="chk" value="" unchecked> 1/2 cup mascarpone</br>
               <input type="checkbox" name="chk" value="" unchecked> 1/2 tsp pink salt</br>
@@ -107,16 +91,4 @@
       <p>Delicious &copy 2013 - All Rights Reserved.<br>Proudly published with Ghost.</p>
     </div> 
   </footer>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-
-  //   (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-  //   function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-  //   e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-  //   e.src='//www.google-analytics.com/analytics.js';
-  //   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-  //   ga('create','UA-XXXXX-X');ga('send','pageview');
-  </script>
-  <script src="scripts/jquery.js"></script>
 </html>
