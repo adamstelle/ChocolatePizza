@@ -1,7 +1,8 @@
 <style>
 
-/*Page Styles*/
+/*Categorized using SMACSS*/
 
+/*LAYOUT*/
 html {
   text-align: center;
 }
@@ -19,9 +20,8 @@ body {
 h1 {
    font-family: 'Yellowtail', cursive;
    font-weight: 700;
-   font-size: 1.6em;
+   font-size: 2em;
    color: #111;
-   padding: 0;
    margin: 0;
 }
 
@@ -31,69 +31,48 @@ h2 {
 
 }
 
-a {
-   text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* HEADER STYLES */
+/* header styles */
 header {
-  top padding: 30px;
-  margin-bottom: 30px;
+  top padding: 50px;
+  margin-bottom: 25px;
   overflow: hidden;
 }
 
-.toplogo {
+.header__toplogo {
   float: left;
   margin-right: 10px;
 
 }
 
-.socialicons {
+.header__socialicons {
    display: inline;
    float: right;
    margin: 0 auto;
    padding-top: 10px;
 }
 
-.social-icons li {
-   display: inline-block;
-   list-style: none;
-   float: left;
-   margin-left: 2px;
+/* footer styles */
+footer {
+   clear: both; 
+   margin-top: 65px;
+   border-top: 1px solid #eee;
+   text-align: center;
+   font-size: 0.85rem;
+   line-height: 1.4rem;
+   color: #bbb;
 }
 
-.social-icons li:nth-child(7) {
-   margin-left: 10px;
-}
-
-.decor {
-   width: 100%;
-   padding-top: 18px;
-   padding-bottom: 15px;
-}
-/**/
-
-
-/* ARTICLE STYLES */
-.meta p {
-  display: inline;
-}
-
+/* article styles */
 .articleheader {
 }
 
-.articleheader h1 {
+.articleheader__title {
   font-family: "Abel";
   font-weight: 1000;
   font-size: 1.6em;
 }
 
-.articleinfo {
+.articleheader__info {
    font-family: 'Abel', sans-serif;
    font-size: 0.5em;
    color: #888;
@@ -101,23 +80,14 @@ header {
    margin-bottom: 25px;
 }
 
+/* MODULES */
 .printericon {
   float: right;
   margin-top: 20px;
 }
 
-article {
-  padding-bottom: 10px;
-}
-
-article p {
-   text-indent: 32px;
-   padding-top: 8px;
-   padding-bottom: 3px;
-}
-
 .recipe {
-   background: url('../images/list-bg.png') no-repeat left top;
+   background: url('../../images/list-bg.png') no-repeat left top;
    width: 100%;
    padding-top: 20px;
    -moz-columns:2 8em;
@@ -126,22 +96,11 @@ article p {
    margin-bottom: 30px;
 }
 
-.ingredients {
+.recipe__ingredients {
    padding: 0 0 20px 50px;  
    font-family: 'Abel';
    font-size: 1.2em;
    line-height: 1.65;
-}
-
-.ingredients li {
-   display: inline-block; 
-   list-style: none;
-   width: 400px;
-   cursor: pointer;
-}
-
-.ingredients li[target=checked] {
-   text-decoration: line-through;
 }
 
 .horizonbreak {
@@ -180,29 +139,4 @@ article p {
 /**/
 
 
-/* FOOTER STYLES */
-footer {
-   clear: both; 
-   margin-top: 65px;
-   border-top: 1px solid #eee;
-   text-align: center;
-   font-size: 0.85rem;
-   line-height: 1.4rem;
-   color: #bbb;
-}
-
-#logo-small {
-   margin: -55px 0 0 -22px;
-   position: absolute;
-   width: 45px;
-   height: 45px;
-   text-align: center;
-   background-color: #fff;
-}
-
-#logo-small img {
-   margin-top: 5px;
-   width: 30px; 
-   height: 30px;
-   opacity: 0.5;
 
