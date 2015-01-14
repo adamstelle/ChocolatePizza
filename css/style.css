@@ -1,0 +1,208 @@
+<style>
+
+/*Page Styles*/
+
+html {
+  text-align: center;
+}
+
+body {
+  font-family: 'Droid Serif', serif;
+  line-height: 1.6em;
+  color: #8E8E8E;
+  text-align: left;
+  width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+   font-family: 'Yellowtail', cursive;
+   font-weight: 700;
+   font-size: 1.6em;
+   color: #111;
+   padding: 0;
+   margin: 0;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: .5em;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER STYLES */
+header {
+  top padding: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.toplogo {
+  float: left;
+  margin-right: 10px;
+
+}
+
+.socialicons {
+   display: inline;
+   float: right;
+   margin: 0 auto;
+   padding-top: 10px;
+}
+
+.social-icons li {
+   display: inline-block;
+   list-style: none;
+   float: left;
+   margin-left: 2px;
+}
+
+.social-icons li:nth-child(7) {
+   margin-left: 10px;
+}
+
+.decor {
+   width: 100%;
+   padding-top: 18px;
+   padding-bottom: 15px;
+}
+/**/
+
+
+/* ARTICLE STYLES */
+.meta p {
+  display: inline;
+}
+
+.articleheader {
+}
+
+.articleheader h1 {
+  font-family: "Abel";
+  font-weight: 1000;
+  font-size: 1.6em;
+}
+
+.articleinfo {
+   font-family: 'Abel', sans-serif;
+   font-size: 0.5em;
+   color: #888;
+   text-transform: uppercase;
+   margin-bottom: 25px;
+}
+
+.printericon {
+  float: right;
+  margin-top: 20px;
+}
+
+article {
+  padding-bottom: 10px;
+}
+
+article p {
+   text-indent: 32px;
+   padding-top: 8px;
+   padding-bottom: 3px;
+}
+
+.recipe {
+   background: url('../images/list-bg.png') no-repeat left top;
+   width: 100%;
+   padding-top: 20px;
+   -moz-columns:2 8em;
+   -webkit-columns:2 8em;
+   columns:2 8em;
+   margin-bottom: 30px;
+}
+
+.ingredients {
+   padding: 0 0 20px 50px;  
+   font-family: 'Abel';
+   font-size: 1.2em;
+   line-height: 1.65;
+}
+
+.ingredients li {
+   display: inline-block; 
+   list-style: none;
+   width: 400px;
+   cursor: pointer;
+}
+
+.ingredients li[target=checked] {
+   text-decoration: line-through;
+}
+
+.horizonbreak {
+  margin-bottom: 25px
+}
+.avatar {
+   float: left;
+   border-radius: 100%;  
+   width: 70px;
+   height: 70px;
+   margin-right: 20px;
+}
+
+.author-name {
+  font-family: "Droid-serif";
+  font-size: 1.25em;
+}
+
+.author-bio {
+   margin: 7px 0;
+   font-size: .8em;
+}
+
+.share-recipe {
+   float: right;
+   width: 175px;
+   height: 55px;
+   background-color: #bb7056;
+   font-family: 'Abel';
+   font-size: 1.25rem;
+   color: white;
+   text-transform: uppercase;
+   border-style: none;      
+   text-align: center;
+}
+/**/
+
+
+/* FOOTER STYLES */
+footer {
+   clear: both; 
+   margin-top: 65px;
+   border-top: 1px solid #eee;
+   text-align: center;
+   font-size: 0.85rem;
+   line-height: 1.4rem;
+   color: #bbb;
+}
+
+#logo-small {
+   margin: -55px 0 0 -22px;
+   position: absolute;
+   width: 45px;
+   height: 45px;
+   text-align: center;
+   background-color: #fff;
+}
+
+#logo-small img {
+   margin-top: 5px;
+   width: 30px; 
+   height: 30px;
+   opacity: 0.5;
+
